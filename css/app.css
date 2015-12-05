@@ -1,0 +1,26 @@
+
+.blockquote-primary {
+	border-left: 5px solid #337ab7;
+}
+
+.blockquote-info {
+	border-left: 5px solid #24AF04;
+}
+
+.blockquote-warning {
+	border-left: 5px solid #f0ad4e;
+	;
+}
+
+#fileD {
+	position: relative;
+}
+
+#fileD>input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
