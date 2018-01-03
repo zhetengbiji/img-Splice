@@ -83,7 +83,7 @@ function start(files_) {
 					var down = document.createElement('a');
 					down.href = imgUrl;
 					down.download = filename;
-					down.click()
+					down.click();
 					URL.revokeObjectURL(imgUrl);
 				}, IMGTYPE[imgType], $('#quality').val() / 100);
 				//alert('拼接完毕');

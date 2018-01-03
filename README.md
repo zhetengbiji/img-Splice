@@ -1,8 +1,11 @@
 #  img-Splice
-这是一个用来拼接图像序列帧的工具，图片序列要大小一致，否则以第一张大小为基准；<br>
-即刻体验：<a href="http://h6apptest.duapp.com/img-Splice/">http://h6apptest.duapp.com/img-Splice/</a>
-<p>作者微博：<a href="http://weibo.com/u/1326039884">折腾笔记</a></p>
-----------------
+这是一个用来拼接图像序列帧的工具    
+即刻体验：[http://h6apptest.duapp.com/img-Splice/](http://h6apptest.duapp.com/img-Splice/)
+
+## 作者
+* 微博：[折腾笔记](http://weibo.com/u/1326039884)
+
 ## 注意事项
-1. 在webkit内核浏览器内使用，推荐chrome
-2. 最好记得修改文件名
+* 图片序列要大小一致，否则以第一张大小为基准
+* 在webkit内核浏览器内使用，推荐chrome
+* 最好记得修改文件名
