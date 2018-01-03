@@ -1,5 +1,4 @@
 $(function() {
-
 	$('#imgFile').on('change', function() {
 		$('#fileNum').html('点击重选文件(共' + this.files.length + '张) 鼠标停留显示文件列表');
 	});
@@ -36,8 +35,12 @@ function start(files_) {
 		files.sort(function(a, b) {
 			var nameA = a.name.match(numTest)[1],
 				nameB = b.name.match(numTest)[1];
-			if(sortType === 'name1') return(Number(nameA) - Number(nameB));
-			else return(Number(nameB) - Number(nameA));
+			if(sortType === 'name1') {
+				return (Number(nameA) - Number(nameB));
+			}
+			else {
+				return (Number(nameB) - Number(nameA));
+			}
 		});
 	} else {
 		files = files_;
@@ -80,9 +83,7 @@ function start(files_) {
 					var down = document.createElement('a');
 					down.href = imgUrl;
 					down.download = filename;
-					var evt = document.createEvent("HTMLEvents");
-					evt.initEvent("click", false, false);
-					down.dispatchEvent(evt);
+					down.click()
 					URL.revokeObjectURL(imgUrl);
 				}, IMGTYPE[imgType], $('#quality').val() / 100);
 				//alert('拼接完毕');
